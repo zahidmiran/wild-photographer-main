@@ -14,7 +14,7 @@ import { signOut } from 'firebase/auth';
 
 const Login = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
-    const [signInWithFacebook, fbUser, fbLoading, fbError] = useSignInWithFacebook(auth);
+   
     const [signInWithGithub, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
 
     const [
@@ -40,7 +40,7 @@ const Login = () => {
 
    
 
-    if(user || googleUser || fbUser || gitUser ){
+    if(user || googleUser || gitUser ){
         navigate(from, {replace: true});
     }
 
@@ -69,25 +69,22 @@ const Login = () => {
 
 
     useEffect(()=>{
-        const error = googleError || fbError || gitError  || emailPassError;
+        const error = googleError  || gitError  || emailPassError;
         if(error){
             console.log(error?.code);
             console.log(error);
             toast(error?.code)
         }
-    },[googleError, fbError, gitError,emailPassError])
+    },[googleError, gitError, emailPassError])
 
 
     return (
         <div>
-            <h5 className='text-center'>To continue, log in to Spotify.</h5>
+            <h5 className='text-center title'>To continue, log in to Wildlife.</h5>
 
-            <button onClick={()=>signInWithFacebook()} className='w-50 btn d-block mx-auto btnStyle fbstyle '>
-                <span className='icon'><FaFacebook /></span>
-                CONTINUE WITH FACEBOOK
-            </button>
+           
 
-            <button onClick={()=>signInWithGoogle()} className='w-50 btn d-block mx-auto btnStyle googleStyle '>
+            <button onClick={()=>signInWithGoogle()} className='w-50 btn d-block mx-auto btnStyle googleStyle btn-hover '>
                 <span className='icon'><FaGoogle /></span>
                 CONTINUE WITH GOOGLE
             </button>
@@ -110,13 +107,13 @@ const Login = () => {
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
 
-                        <Form.Control ref={emailRef} className='formbox' type="email" placeholder="Enter email" />
+                        <Form.Control required ref={emailRef} className='formbox' type="email" placeholder="Enter email" />
 
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control ref={passwordRef} className='formbox' type="password" placeholder="Password" />
+                        <Form.Control required ref={passwordRef} className='formbox' type="password" placeholder="Password" />
                     </Form.Group>
                     <button onClick={forgotPassword} className='forgotBtn '>Forgot your password?</button>
 
@@ -133,15 +130,14 @@ const Login = () => {
                 <div className='mt-5 mb-5'>
                     <hr />
                     <h6 className='strong text-center'>Don't have an account?</h6>
-                    <button onClick={()=>{navigate('/signup')}} className='signupbtn btn d-block mx-auto btnStyle googleStyle '>    
-                <span className='signupbtn'></span>
-                SIGN UP FOR SPOTIFY
-            </button>
+                    <button onClick={()=>{navigate('/signup')}} className='signupbtn hover btn d-block mx-auto btnStyle googleStyle '>    
+                <span className='signupbtn hover'></span>
+                SIGN UP </button>
                 </div>
             </div>
 
             { logedUser ? 
-                <button onClick={()=>signOut(auth)} className='w-25 btn d-block mx-auto btnStyle googleStyle '>
+                <button onClick={()=>signOut(auth)} className='w-25 btn d-block mx-auto btnStyle googleStyle hover'>
                 LOG OUT
             </button>
             : ''

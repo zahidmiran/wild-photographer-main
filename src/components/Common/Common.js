@@ -4,6 +4,7 @@ import { Form } from 'react-bootstrap';
 import auth from '../../firebase.init'
 import {    useSignInWithFacebook,  useSignInWithGoogle,  } from 'react-firebase-hooks/auth';
 import { ToastContainer, toast } from 'react-toastify';
+import './Common.css'
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -11,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Common = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
-    const [signInWithFacebook, fbUser, fbLoading, fbError] = useSignInWithFacebook(auth);
+    
     
 
 
@@ -34,14 +35,11 @@ const Common = () => {
 
     return (
         <div>
-            <h5 className='text-center'>CREATE NEW ACCOUNT</h5>
+            <h5 className='text-center mt-5'>CREATE NEW ACCOUNT</h5>
 
-            <button onClick={()=>signInWithFacebook()} className='w-50 btn d-block mx-auto btnStyle fbstyle '>
-                <span className='icon'><FaFacebook /></span>
-                SIGN UP WITH FACEBOOK
-            </button>
+           
 
-            <button onClick={()=>signInWithGoogle()} className='w-50 btn d-block mx-auto btnStyle googleStyle '>
+            <button onClick={()=>signInWithGoogle()} className='btn-hover mt-5 mb-5 w-50 btn d-block mx-auto btnStyle googleStyle '>
                 <span className='icon'><FaGoogle /></span>
                 SIGN UP WITH GOOGLE
             </button>
