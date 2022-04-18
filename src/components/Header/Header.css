@@ -1,0 +1,29 @@
+.header-logut-btn{
+    background-color: rgb(107, 170, 201);
+    color: rgb(15, 15, 15);
+    display: inline-block;
+    height: 60px;
+    width: 40%;
+    border-radius: 50px;
+    font-size: 22px;
+    align-items: center;
+    
+
+}
+.header-d-name{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    
+}
+.main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    padding: 5px;
+    width: 70px;
+
+}
