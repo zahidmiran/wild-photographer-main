@@ -1,0 +1,31 @@
+.blog-container{
+    padding: 10px;
+
+}
+.div-1st{
+    background-color: rgb(230, 224, 237);
+    border-radius: 50px ;
+    margin: 30px;
+}
+.div-2nd{
+    background-color: rgb(192, 201, 241);
+    border-radius: 50px ;
+    margin: 30px;
+}
+.div-3rd{
+    background-color: rgb(163, 172, 231);
+    border-radius: 50px ;
+    margin: 30px;
+}
+.div-3rd small{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.q-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(205, 69, 69);
+    margin: 5px;
+}
