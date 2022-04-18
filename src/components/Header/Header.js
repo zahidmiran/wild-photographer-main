@@ -14,7 +14,7 @@ const Header = () => {
     console.log(user);
     return (
         <>
-         <Navbar collapseOnSelect expand="lg" fixed="top" bg="primary" variant="dark">
+         <Navbar collapseOnSelect expand="lg" sticky="top" bg="primary" variant="dark">
             <Container>
                 <Navbar.Brand as={Link} to='/'>
                     <img className='img' height={40} src='logo.jpg' alt="" />

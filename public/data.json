@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Local One Day Photography ",
+        "price": "300",
+        "description":"Capture a milestone or an important life event to make the moment last.        ",
+             
+        "img": "10.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Product Photography",
+        "price": "400",
+        "description": "Product photography, or e-commerce photography as it's sometimes known, is basically what it sounds like: photos taken and used on websites and social media platforms to help drive sales of your product or service.",
+        "img": "20.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Food photography",
+        "price": "350",
+        "description": "Network Design. Network Device Installation. Newtork Maintance.",
+        "img": "30.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Videography and Travel Filmmaking",
+        "price": "350",
+        "description": "Creating films and being called a filmmaker and content creator was my biggest dream. I have been working as a photographer, cinematographer, and editor. Moreover, I create content for social media and YouTube. I do professionavoice-overs and scriptwriting for my projects. Translations, video editing, and cinematography are included in my everyday task.",
+        "img": "40.jpg"
+    },
+    {
+        "id": 5,
+        "name": "cinematic Headshot",
+        "price": "200",
+        "description": "You will get a beautiful/cinematic edited portrait for your business profile or career. I shoot in NY/NJ area up to 60 miles.",
+        "img": "50.jpg"
+    },
+    {
+        "id": 6,
+        "name": "lifestyle photography campaign",
+        "price": "600",
+        "description": "I am a New York based commercial photographer with more than 10 years of international expertise in lifestyle & fashion. My work was featured in various global exhibitions and well-known magazines (such as New York Post, Business Insider, Vogue Italia, etc.). I am passionate about my work and had the opportunity to work with many brand names to include: Vodafone, Axe, Panasonic, Nissan, Nescafe, Tag Heuer, Piaget, Chevrolet, L`Oreal, Montblanc, and many more.        ",
+        "img": "60.jpg"
+    }
+]
