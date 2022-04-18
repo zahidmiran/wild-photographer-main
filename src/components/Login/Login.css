@@ -1,0 +1,62 @@
+.btnStyle {
+    border-radius: 50px;
+    font-weight: 700;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+.fbstyle {
+    background-color: #2e5ec0;
+    color: white;
+
+}
+
+.googleStyle {
+    background-color: white;
+    color: rgb(43, 40, 40);
+    border: 1px solid black;
+}
+
+.twitterStyle {
+    background-color: #1DA1F2;
+    color: white;
+
+}
+.login{
+    background-color: #1ed760;
+    width: 100%;
+}
+.signupbtn{
+    width: 80%;
+    height: 45px;
+}
+.gitStyle {
+    background-color: #14171A;
+    color: white;
+}
+
+.icon {
+    /* color: white; */
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.forgotBtn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: none;
+
+}
+
+.forgotBtn:hover {
+    text-decoration: underline;
+}
+.formbox{
+    height: 60px;
+    border: 1px solid rgb(38, 37, 37);
+    
+}
