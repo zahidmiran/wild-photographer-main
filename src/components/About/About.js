@@ -5,7 +5,9 @@ const About = () => {
     return (
         <section className='px-4 py-32 mx-auto max-w-7xl'>
             <h2 className="title">About me</h2>
-            <p className='text-center text-2xl font-bold pb-2 text-orange-400'>i am</p>
+            <p className='text-center'>
+                        I am <span className='name'>Jahid Miran</span> and I'm a
+                    </p>
 
             <div className='containe about-parent'>
 
@@ -19,14 +21,11 @@ const About = () => {
                 </div>
 
                 <div>
-                    <p className='text-center'>
-                        I am Jawad and I'm a
-                    </p>
+                    
                     <h1 className='text-center'>
-                        Web Developer.
-                    </h1>
+                    wildlife photographers                     </h1>
                     <p className='mb-5 text-base text-left text-gray-800 md:text-xl'>
-                        <p>Self-motivated and confident Web Developer. Able to do any web and programming related task by handling difficulties smoothly in any given time. Have a reasonable skill on Front-End and Back-End development.</p>
+                        <p>Ever wonder about those wildlife photographers who risk life and limb to get the perfect shot? That’s me. I’ve spent 25 years with National Geographic—and I’ve got the stories and scars to prove it. These days my focus is on the Photo Ark, the world’s largest collection of animal studio portraits. My goal is simple: to get the public to care and save species from extinction.</p>
                     </p>
 
                 </div>

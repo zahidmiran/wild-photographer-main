@@ -1,0 +1,26 @@
+.grid{
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* margin: 10px; */
+}
+.img-404{
+    width: 80%;
+    align-items: center;
+    /* width: 500px; */
+}
+.centers {
+    align-items: center;
+    text-align: center;
+
+}
+.div{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.pic{
+    width: 100%;
+    align-items: center;
+    /* margin-bottom: ; */
+}

@@ -6,6 +6,10 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 10px;
 }
+.name{
+    font-size: 30px;
+    color: coral;
+}
 @media only screen and (max-width:830px) {
     .about-parent{
         grid-template-columns: repeat(1,1fr);
